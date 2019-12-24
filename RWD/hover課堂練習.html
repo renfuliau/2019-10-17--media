@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        #all{
+            width: 100%;
+            height: 100vh;
+            background-color: darkslategray;
+
+        }
+
+        #navbar{
+            width: 100%;
+            height: 39px;
+            background-color: red;
+            display: flex;
+            padding: 10px;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid lightgray;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #navbar ul li a:hover {
+            background-color: black;
+        }
+
+        #navbar ul li ul li a {
+            display: block;
+            padding: 10px 46px;
+            text-decoration: none;
+            color: rgb(56, 22, 16);
+            font-size: bold;
+        }
+
+        #navbar ul li ul li a:hover {
+            color: white;
+        }
+
+        #navbar ul li ul li a:hover ul li a{
+            color:rgb(56, 22, 16);
+        }
+
+        #navbar ul li ul {
+            position: relative;
+            background-color: aqua;
+            
+        }
+        
+        
+
+        #navbar ul li ul li ul{
+            width: 116px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 116px;
+            top: -2px;
+            background-color: aqua;
+        }
+
+        #navbar ul li ul li ul li{
+            display: inline-block;
+            width: 116px;
+            
+            
+        }
+
+        #navbar ul li ul li ul li a {
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: rgb(56, 22, 16);
+            font-size: bold;
+        }
+
+        #navbar ul li ul li ul li a:hover {
+            color: white;
+        }
+
+        #navbar ul li ul {
+            display: none;
+        }
+
+        #navbar ul li:hover ul {
+            display: flex;
+        }
+
+        #navbar ul li:hover ul li ul{
+            display: none;
+        }
+
+        #navbar ul li ul li:hover ul{
+            display: flex;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="all">
+        <div id="navbar">
+            <ul>
+                <li><a href="">08有三個兒子</a>
+                    <ul>
+                        <li><a href="">大8</a></li>
+                        <li><a href="">二8</a></li>
+                        <li><a href="">三8</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="">07有三個兒子</a>
+                    <ul>
+                        <li><a href="">大7</a>
+                            <ul>
+                                <li><a href="">大7A</a></li>
+                                <li><a href="">大7B</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">二7</a></li>
+                        <li><a href="">三7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="box-group">
+                <div id="box"></div>
+                <div id="box"></div>
+                <div id="box"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
